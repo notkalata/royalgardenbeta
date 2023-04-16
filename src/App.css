@@ -1,38 +1,371 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1.5s all ease;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.reveal.aktiv{
+    transform: translateY(0);
+    opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+
+.active{
+    border-bottom: 3px solid white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Footer{
+    background-color: black;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+    margin: 0;
+    padding: .5rem .5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Landing{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    background-color: rgba(211, 211, 211, 0.904);
+}
+
+.Landing .Buy{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url(https://ca-times.brightspotcdn.com/dims4/default/4b16487/2147483647/strip/true/crop/2400x1600+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F43%2Fc9%2F645614c444e5bf0df2389c3affd6%2F969540-sd-fi-society-tour-8.jpg);
+    text-align: center;
+}
+
+.Landing .Contact{
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.4)), url(https://www.myballard.com/wp-content/uploads/904-NW-Market-render-looking-NW_big.jpeg);
+}
+
+.Buy h1, .Contact h1{
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 2rem;
+    border: 1px solid black;
+    text-align: center;
+    width: max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    padding: 5px;
+}
+
+.Buy h1:hover, .Contact h1:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.Apartments{
+    display: flex;
+    height: 100vh;
+}
+
+.Apartments img{
+    width: 30%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.Apartments .Panorama{
+    width: 100%;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8)), url(https://ca-times.brightspotcdn.com/dims4/default/4b16487/2147483647/strip/true/crop/2400x1600+0+0/resize/1200x800!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F43%2Fc9%2F645614c444e5bf0df2389c3affd6%2F969540-sd-fi-society-tour-8.jpg);
+}
+
+.Panorama-Text{
+    font-size: 1.5rem;
+    font-family: 'Sofia Sans', sans-serif;
+    width: 60%;
+    padding: 0 1rem;
+    margin: 20% 20%;
+}
+
+.Inovation{
+    padding: 2rem;
+    display: block;
+    background-color: lightgrey;
+}
+
+.Inovation img{
+    display: block;
+    margin: auto;
+}
+
+.Inovation .Extras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: auto;
+    font-family: 'Sofia Sans', sans-serif;
+    color: black;
+    width: 80%;
+    text-transform: uppercase;
+}
+
+.Extras p{
+    border-bottom: 3px solid palevioletred;
+    width: max-content;
+}
+
+.Inovation img, .Location img{
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+.Inovation img:hover, .Location img:hover{
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.Location{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.404);
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.Location .Information{
+    width: 40%;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+#learnMore{
+    float: right;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 500;
+    background-color: inherit;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#learnMore:hover{
+    transition: 0.5s;
+    color: white;
+    background-color: goldenrod;
+}
+
+.darken, .Navigation{
+    margin: 0%;
+    padding: 0%;
+}
+
+.darken {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.05)), url(https://ogden_images.s3.amazonaws.com/www.ljworld.com/images/2021/08/11164128/PREFINAL-Union-at-the-Loop-Exterior.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.centered{
+    position: relative;
+    bottom: 20%;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.Navigation{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.Navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.Navigation img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.Navigation a:hover{
+    transform: scale(1.05);
+    transform: 0.2s;
+}
+
+.Navigation a{
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.Card{
+    color: white;
+    width: 18rem;
+    height: 9rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin: 2rem 1rem;
+}
+
+.Card h3{
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+}
+
+.Card p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.Cards{
+    padding: 1rem 1rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    .Navigation a{
+        font-size: 1rem;
+    }
+
+    .Navigation img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .centered{
+        display: none;
+    }
+
+    .Location{
+        display: block;
+        padding: .25rem;
+        height: auto;
+    }
+
+    .Location .Information{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #learnMore{
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-bottom: .25rem;
+    }
+
+    .Inovation{
+        height: auto;
+    }
+
+    .Inovation img, .Location img{
+        width: 100%;
+    }
+
+    .Inovation .Extras{
+        display: flex;
+        font-size: 0.6rem;
+        flex-direction: row;
+    }
+
+    .Extras p{
+        border-bottom: 2px solid palevioletred;
+    }
+
+    .Apartments{
+        display: block;
+        height: auto;
+    }
+
+    .Apartments img{
+        display: none;
+    }
+
+    .Apartments .Panorama{
+        height: 80vh;
+    }
+
+    .Panorama-Text{
+        font-size: 1rem;
+        font-family: 'Sofia Sans', sans-serif;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 30%;
+        margin-left: 0;
+    }
+
+    .Landing{
+        display: block;
+        height: auto;
+    }
+
+    .Landing .Buy, .Landing .Contact{
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .Buy h1, .Contact h1{
+        position: relative;
+        margin-top: 5%;
+        text-transform: uppercase;
+        font-family: 'Sofia Sans', sans-serif;
+        font-size: 1.5rem;
+    }
 }
