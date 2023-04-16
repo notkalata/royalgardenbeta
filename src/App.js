@@ -1,6 +1,7 @@
-import Navigation from './Navigation.js'
+import Navigation from './Components/Navigation.js'
+import Footer from './Components/Footer.js'
+import Centered from './Components/Centered.js';
 import './App.css';
-import Footer from './Footer.js'
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
@@ -22,12 +23,7 @@ export default function App() {
   return (
     <div className="App">
       <Navigation />
-      <div className="darken">
-        <div className="centered">
-          <h1>Royal Garden</h1>
-          <p>Apartment Complex</p>
-        </div>
-      </div>
+      <Centered header={"Royal Garden"} text={"Apartment Complex"} url={"https://ogden_images.s3.amazonaws.com/www.ljworld.com/images/2021/08/11164128/PREFINAL-Union-at-the-Loop-Exterior.jpg"} />
       <div className="Location">
         <div className="Information reveal">
           <h1>Location & Lifestyle</h1>
