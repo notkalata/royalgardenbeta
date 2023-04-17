@@ -2,6 +2,7 @@ import Navigation from './Components/Navigation.js'
 import Footer from './Components/Footer.js'
 import NoPage from './Components/NoPage.js'
 import Homepage from './Components/Homepage.js';
+import Gallery from './Components/Gallery.js'
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -37,7 +38,7 @@ export default function App() {
           </>}></Route>
           <Route path='/gallery' element={
           <>
-            <h1>Gallery Page</h1>
+            <Gallery />
           </>}></Route>
           <Route path='/about' element={
           <>
