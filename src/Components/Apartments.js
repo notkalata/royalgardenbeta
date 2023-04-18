@@ -5,7 +5,7 @@ export default function Apartments(){
     const [apartments, setApartments] = useState([]);
 
     useEffect(() =>{
-        fetch('http://localhost:8080/people')
+        fetch('http://localhost:8080/apartments')
         .then((response) => response.json())
         .then((data) => setApartments(data));
     }, [])
@@ -13,7 +13,7 @@ export default function Apartments(){
     return (
         <div className="ApartmentsDisplay">
             {apartments.map((apartment) =>
-                <Apartment name={apartment.name} price={apartment.age} />
+                <Apartment title={apartment.title} location={apartment.location} image={apartment.image} price={apartment.price} area={apartment.area}/>
             )}
         </div>
     );
