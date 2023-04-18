@@ -8,6 +8,96 @@ body{
     margin: 0;
 }
 
+.About{
+    padding: 1rem 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.AboutText{
+    font-size: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: 0.25rem;
+}
+
+.ApartmentsDisplay{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Apartment{
+    margin: 1rem 1rem;
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 250px;
+    width: 300px;
+}
+
+.Apartment p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.Apartment h1{
+    font-size: 2rem;
+}
+
+.Apartment input[type="button"]{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    background: inherit;
+    transition: 0.5s;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+.Apartment input[type="button"]:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.Finished{
+    margin-bottom: 1rem;
+}
+
+.GalleryImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+}
+
+.GalleryText{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.GalleryVideo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.Carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.Carousel img{
+    width: 30%;
+}
 
 .reveal{
     position: relative;

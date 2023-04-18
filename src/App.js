@@ -3,6 +3,8 @@ import Footer from './Components/Footer.js'
 import NoPage from './Components/NoPage.js'
 import Homepage from './Components/Homepage.js';
 import Gallery from './Components/Gallery.js'
+import Apartments from './Components/Apartments.js'
+import About from './Components/About.js'
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -34,7 +36,7 @@ export default function App() {
           </>}></Route>
           <Route path='/apartments' element={
           <>
-            <h1>Apartments Page</h1>
+            <Apartments />
           </>}></Route>
           <Route path='/gallery' element={
           <>
@@ -42,7 +44,7 @@ export default function App() {
           </>}></Route>
           <Route path='/about' element={
           <>
-            <h1>About Page</h1>
+            <About />
           </>}></Route>
           <Route path='*' element={
           <>
