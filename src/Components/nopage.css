@@ -1,0 +1,24 @@
+.NoPage{
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.NoPage i{
+    font-size: 6rem;
+}
+
+.NoPage h1{
+    font-size: 3rem;
+}
+
+.NoPage h2{
+    font-size: 2rem;
+    color: gray;
+}
+
+.NoPage p{
+    font-size: 1.5rem;
+    color: red;
+}
