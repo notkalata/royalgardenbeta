@@ -1,0 +1,42 @@
+.AboutCards{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.AboutCard{
+    text-align: center;
+    font-family: 'Sofia Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.AboutCard i{
+    font-size: 5rem;
+}
+
+.AboutCard h3{
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.AboutCard p{
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.AboutCard button{
+    font-size: 1rem;
+    border: 1px solid black;
+    background-color: inherit;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+    font-family: 'Sofia Sans', sans-serif;
+    cursor: pointer;
+}
+
+.AboutCard button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.5s;
+}

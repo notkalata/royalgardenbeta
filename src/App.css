@@ -26,29 +26,35 @@ body{
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1rem;
+    background-color: rgba(128, 128, 128, 0.4);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .Apartment{
-    margin: 1rem 1rem;
     font-family: 'Sofia Sans', sans-serif;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.05);
-    height: 500px;
-    width: 600px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 30%;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .Apartment img{
-    width: 250px;
+    width: 400px;
     height: 250px;
+    border-radius: 1rem;
 }
 
 .Apartment p{
+    margin-top: .25rem;
     font-size: 1.5rem;
     color: black;
 }
 
 .Apartment h1{
+    margin-top: .25rem;
     font-size: 2rem;
 }
 
@@ -120,6 +126,7 @@ body{
 
 .active{
     border-bottom: 3px solid white;
+    transition: 0.5s;
 }
 
 .Footer{
@@ -246,7 +253,7 @@ body{
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background-color: rgba(128, 128, 128, 0.404);
+    background-color: rgba(128, 128, 128, 0.4);
     align-items: center;
     justify-content: space-around;
     height: 100vh;
@@ -340,6 +347,7 @@ body{
     display: flex;
     align-items: center;
     padding: .25rem;
+    text-transform: uppercase;
 }
 
 .Card{
@@ -463,5 +471,25 @@ body{
         text-transform: uppercase;
         font-family: 'Sofia Sans', sans-serif;
         font-size: 1.5rem;
+    }
+
+    .Apartment{
+        width: 95%;
+    }
+
+    .GalleryImage{
+        width: 100%;
+    }
+
+    .GalleryVideo{
+        width: 100%;
+    }
+
+    .Carousel{
+        display: block;
+    }
+
+    .Carousel img{
+        width: 100%;
     }
 }

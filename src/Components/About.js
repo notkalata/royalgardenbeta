@@ -1,3 +1,6 @@
+import AboutCard from "./AboutCard";
+import './about.css'
+
 export default function About(){
     return(
         <div className="About">
@@ -14,11 +17,11 @@ export default function About(){
                 </p>
                 <p>Contact information:
                 <br />
-                <b>Phone: +1 (555) 123-4567
+                <b><i class="fa-solid fa-phone"></i>: +1 (555) 123-4567
                 <br />
-                Email: info@buildingcompany.com
+                <i class="fa-solid fa-envelope"></i>: info@buildingcompany.com
                 <br />
-                Address: 123 Main Street, Anytown USA 12345</b>
+                <i class="fa-solid fa-location-dot"></i>: 123 Main Street, Anytown USA 12345</b>
                 <br />
 
                 If you would like to schedule a tour of our apartment complex, please feel free to call or email us to arrange a visit. We would be happy to show you around and answer any questions you may have about our living spaces and community.
@@ -26,6 +29,12 @@ export default function About(){
                 We value our residents' feedback and are always looking for ways to improve our services. If you have any comments or suggestions, please do not hesitate to reach out to us. We appreciate your input and strive to provide the best possible living experience for our community.
                 <br />
                 Thank you for considering our building company and apartment complex. We look forward to hearing from you soon.</p>
+            </div>
+            <div className="AboutCards">
+                <AboutCard icon={"fa-solid fa-building"} title={"Modern building"} text={"Royal Garden is built with modern materials."} buttonText={"See more"} />
+                <AboutCard icon={"fa-solid fa-building-user"} title={"Smart control"} text={"Every apartment comes with smart control feature."} buttonText={"See more"} />
+                <AboutCard icon={"fa-solid fa-tree-city"} title={"Local park"} text={"Inside the residence lies a green park."} buttonText={"See more"} />
+                <AboutCard icon={"fa-solid fa-wallet"} title={"Reasonable price"} text={"Prices are calculated to be as friendly as possible."} buttonText={"See more"} />
             </div>
         </div>
     );
