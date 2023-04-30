@@ -9,109 +9,6 @@ body{
     margin: 0;
 }
 
-.About{
-    padding: 1rem 1rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.AboutText{
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    word-spacing: 0.25rem;
-}
-
-.ApartmentsDisplay{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
-    background-color: rgba(128, 128, 128, 0.4);
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
-.Apartment{
-    font-family: 'Sofia Sans', sans-serif;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 30%;
-    padding-bottom: 1rem;
-    border-radius: 2rem;
-    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
-}
-
-.Apartment img{
-    width: 400px;
-    height: 250px;
-    border-radius: 1rem;
-}
-
-.Apartment p{
-    margin-top: .25rem;
-    font-size: 1.5rem;
-    color: black;
-}
-
-.Apartment h1{
-    margin-top: .25rem;
-    font-size: 2rem;
-}
-
-.Apartment input[type="button"]{
-    font-family: 'Sofia Sans', sans-serif;
-    font-size: 1.5rem;
-    color: black;
-    background: inherit;
-    transition: 0.5s;
-    text-transform: uppercase;
-    border: 2px solid black;
-}
-
-.Apartment input[type="button"]:hover{
-    transition: 0.5s;
-    cursor: pointer;
-    color: white;
-    background-color: black;
-}
-
-.Finished{
-    margin-bottom: 1rem;
-}
-
-.GalleryImage{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: auto;
-}
-
-.GalleryText{
-    font-family: 'Sofia Sans', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.GalleryVideo{
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.Carousel{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
-}
-
-.Carousel img{
-    width: 30%;
-}
-
 .reveal{
     position: relative;
     transform: translateY(150px);
@@ -128,16 +25,6 @@ body{
 .active{
     border-bottom: 3px solid white;
     transition: 0.5s;
-}
-
-.Footer{
-    background-color: black;
-    color: white;
-    font-family: 'Sofia Sans', sans-serif;
-    margin: 0;
-    padding: .5rem .5rem;
-    font-size: 1rem;
-    text-align: center;
 }
 
 .Landing{
@@ -476,21 +363,5 @@ body{
 
     .Apartment{
         width: 95%;
-    }
-
-    .GalleryImage{
-        width: 100%;
-    }
-
-    .GalleryVideo{
-        width: 100%;
-    }
-
-    .Carousel{
-        display: block;
-    }
-
-    .Carousel img{
-        width: 100%;
     }
 }

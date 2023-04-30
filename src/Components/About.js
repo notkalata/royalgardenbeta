@@ -3,6 +3,10 @@ import './about.css'
 
 export default function About(){
     return(
+        <div>
+        <div className="AbTop">
+            <h1>About</h1>
+        </div>
         <div className="About">
             <div className="AboutText">
                 <p>Welcome to our building company, where we specialize in creating modern and luxurious living spaces for our clients. Our passion for design and construction is evident in every project we undertake, and our newly built apartment complex is no exception.
@@ -36,6 +40,7 @@ export default function About(){
                 <AboutCard icon={"fa-solid fa-tree-city"} title={"Local park"} text={"Inside the residence lies a green park."} buttonText={"See more"} />
                 <AboutCard icon={"fa-solid fa-wallet"} title={"Reasonable price"} text={"Prices are calculated to be as friendly as possible."} buttonText={"See more"} />
             </div>
+        </div>
         </div>
     );
 }

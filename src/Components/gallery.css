@@ -1,0 +1,44 @@
+.Top{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0,0,0,0.5)), url(https://www.sbid.org/wp-content/uploads/2021/12/V.Concept-by-Victoria-Vitkovskaya-Almond-Apartment16.jpg);
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Top h1{
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+}
+
+.Carousel{
+    padding-top: 2rem;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Carousel img{
+    width: 30%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.Carousel img:hover{
+    transform: scale(1.02);
+}
+
+@media screen and (max-width:576px){
+    .Carousel img{
+        width: 95%;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    }
+    
+    .Top{
+        background-size: cover;
+    }
+}

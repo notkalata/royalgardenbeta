@@ -1,0 +1,16 @@
+.Footer{
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: .5rem .5rem;
+}
+
+.Footer p{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Footer i{
+    padding-left: .25rem;
+}

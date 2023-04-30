@@ -1,0 +1,101 @@
+.ATop{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0,0,0,0.5)), url(https://www.rent.com/blog/wp-content/uploads/2021/08/25losangeles.jpg);
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ATop h1{
+    margin: 0;
+    font-size: 3rem;
+    font-family: 'Sofia Sans', sans-serif;
+    color: white;
+}
+
+.Categories{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.Categories h3{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: .5rem 1rem;
+}
+
+.Categories h3:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+.ApartmentsDisplay{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: rgba(128, 128, 128, 0.25);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.Apartment{
+    font-family: 'Sofia Sans', sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    width: 30%;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+.Apartment img{
+    width: 400px;
+    height: 250px;
+    border-radius: 1rem;
+}
+
+.Apartment img:hover{
+    transform: scale(1.01);
+}
+
+.Apartment p{
+    margin-top: .25rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.Apartment h1{
+    margin-top: .25rem;
+    font-size: 2rem;
+}
+
+.Apartment input[type="button"]{
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+    background: inherit;
+    transition: 0.5s;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+.Apartment input[type="button"]:hover{
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+@media screen and (max-width: 576px) {
+    .ATop{
+        background-size: cover;
+    }
+    
+    .Categories{
+        display: none;
+    }
+}
