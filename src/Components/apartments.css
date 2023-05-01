@@ -98,4 +98,8 @@
     .Categories{
         display: none;
     }
+
+    .Apartment{
+        width: 95%;
+    }
 }

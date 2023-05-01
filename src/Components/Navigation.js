@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import './navigation.css'
 
 export default function Navigation(){
     return (

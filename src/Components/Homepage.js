@@ -1,4 +1,5 @@
 import Centered from './Centered.js'
+import './homepage.css'
 
 export default function Homepage(){
     return(
