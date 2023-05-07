@@ -8,3 +8,20 @@
 body{
     margin: 0;
 }
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+  
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: .25rem;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.5);
+}

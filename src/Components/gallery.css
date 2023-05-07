@@ -14,28 +14,28 @@
 }
 
 .Carousel{
-    padding-top: 2rem;
-    background-color: rgba(0, 0, 0, 0.1);
-    padding-bottom: 1rem;
+    margin: 2rem 0rem;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+.Carousel::-webkit-scrollbar {
+    display: none;
 }
 
 .Carousel img{
-    width: 30%;
+    width: 600px;
     height: auto;
-    margin-bottom: 1rem;
-}
-
-.Carousel img:hover{
-    transform: scale(1.02);
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 @media screen and (max-width:576px){
     .Carousel img{
-        width: 95%;
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        height: auto;
     }
     
     .Top{
