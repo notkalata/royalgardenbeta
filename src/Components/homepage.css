@@ -10,12 +10,6 @@
     opacity: 1;
 }
 
-
-.active{
-    border-bottom: 3px solid white;
-    transition: 0.5s;
-}
-
 .Landing{
     display: flex;
     justify-content: space-around;

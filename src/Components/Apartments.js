@@ -17,7 +17,7 @@ export default function Apartments(){
                 <h1>Apartments</h1>
             </div>
             <div className="Categories">
-                <h3 onClick={console.log("Hello!")}>Studios</h3>
+                <h3>Studios</h3>
                 <h3>Small Apartments</h3>
                 <h3>Medium Apartments</h3>
                 <h3>Bigger Apartments</h3>        
