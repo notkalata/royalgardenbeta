@@ -1,0 +1,197 @@
+/* MOBILE PHONE */
+
+@media screen and (max-width: 500px) {
+    .AboutCards{
+        display: block;
+        padding-top: 0;
+    }
+
+    .AboutCard{
+        padding-top: 2rem;
+    }
+
+    .About{
+        width: 100%;
+    }
+
+    .AboutText{
+        text-align: justify;
+        word-spacing: 0;
+    }
+
+    .AbTop{
+        background-size: cover;
+    }
+
+    #toggle-button{
+        display: flex;
+    }
+
+    .Navigation ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .Navigation{
+        flex-direction: column;
+    }
+
+    .Navigation.open{
+        align-items: center;
+    }
+
+    .navbar.open{
+        display: flex;
+        align-items: center;
+    }
+
+    .Navigation img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .ATop{
+        background-size: cover;
+    }
+    
+    .Categories{
+        display: block;
+    }
+
+    .Categories h3{
+        margin: 1rem auto;
+        width: max-content;
+    }
+
+    .Apartment{
+        width: 95%;
+    }
+
+    .Carousel img{
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .Top{
+        background-size: cover;
+    }
+
+    .centered{
+        display: none;
+    }
+
+    .Location{
+        display: block;
+        padding: .25rem;
+        height: auto;
+    }
+
+    .Location .Information{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    #learnMore{
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-bottom: .25rem;
+    }
+
+    .Inovation{
+        height: auto;
+    }
+
+    .Inovation img, .Location img{
+        width: 100%;
+    }
+
+    .Inovation .Extras{
+        display: flex;
+        font-size: 0.6rem;
+        flex-direction: row;
+    }
+
+    .Extras p{
+        border-bottom: 2px solid palevioletred;
+    }
+
+    .Apartments{
+        display: block;
+        height: auto;
+    }
+
+    .Apartments img{
+        display: none;
+    }
+
+    .Apartments .Panorama{
+        height: 80vh;
+    }
+
+    .Panorama-Text{
+        font-size: 1rem;
+        font-family: 'Sofia Sans', sans-serif;
+        width: 100%;
+        margin-top: 0;
+        padding-top: 30%;
+        margin-left: 0;
+    }
+
+    .Landing{
+        display: block;
+        height: auto;
+    }
+
+    .Landing .Buy, .Landing .Contact{
+        height: 50vh;
+        background-size: cover;
+    }
+
+    .Buy h1, .Contact h1{
+        position: relative;
+        margin-top: 5%;
+        text-transform: uppercase;
+        font-family: 'Sofia Sans', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #toggle-button{
+        display: flex;
+    }
+
+    .Navigation ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .Navigation{
+        flex-direction: column;
+    }
+
+    .Navigation.open{
+        align-items: center;
+    }
+
+    .navbar.open{
+        display: flex;
+        align-items: center;
+    }
+
+    .Navigation img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .Categories{
+        flex-wrap: wrap;
+    }
+
+    .AboutCards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

@@ -6,6 +6,7 @@ import Gallery from './Components/Gallery.js'
 import Apartments from './Components/Apartments.js'
 import About from './Components/About.js'
 import './App.css';
+import './mobile.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function reveal() {

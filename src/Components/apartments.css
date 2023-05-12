@@ -87,22 +87,3 @@
     color: white;
     background-color: black;
 }
-
-@media screen and (max-width: 576px) {
-    .ATop{
-        background-size: cover;
-    }
-    
-    .Categories{
-        display: block;
-    }
-
-    .Categories h3{
-        margin: 1rem auto;
-        width: max-content;
-    }
-
-    .Apartment{
-        width: 95%;
-    }
-}

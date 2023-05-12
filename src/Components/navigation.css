@@ -56,29 +56,3 @@
     transform: scale(1.05);
     transform: 0.2s;
 }
-
-@media screen and (max-width:576px) {
-    #toggle-button{
-        display: flex;
-    }
-
-    .Navigation ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    .Navigation{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar.open{
-        display: flex;
-    }
-
-    .Navigation img{
-        width: 3rem;
-        height: 3rem;
-    }
-}
